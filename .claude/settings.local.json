@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(unzip:*)",
+      "Bash(cd:*)",
+      "Bash(/c/wamp64/bin/mysql/mysql8.3.0/bin/mysql.exe -u root -e \"CREATE DATABASE IF NOT EXISTS page_builder_anti_test CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;\" 2>&1)",
+      "Bash(/c/wamp64/bin/mysql/mysql8.3.0/bin/mysql.exe -u root -e \"SHOW DATABASES LIKE 'page_builder_anti_test';\" 2>&1)",
+      "Bash(/c/wamp64/bin/mysql/mysql8.3.0/bin/mysql.exe -u root page_builder_anti -e \"\nSELECT 'sections' AS table_name, COUNT\\(*\\) AS rows FROM sections\nUNION ALL SELECT 'settings', COUNT\\(*\\) FROM settings\nUNION ALL SELECT 'users', COUNT\\(*\\) FROM users\nUNION ALL SELECT 'roles', COUNT\\(*\\) FROM roles\nUNION ALL SELECT 'permissions', COUNT\\(*\\) FROM permissions\nUNION ALL SELECT 'publish_histories', COUNT\\(*\\) FROM publish_histories;\n\" 2>&1)",
+      "Bash(/c/wamp64/bin/mysql/mysql8.3.0/bin/mysql.exe -u root page_builder_anti -e \"SELECT COUNT\\(*\\) AS sections FROM sections; SELECT COUNT\\(*\\) AS settings FROM settings; SELECT COUNT\\(*\\) AS users FROM users; SELECT COUNT\\(*\\) AS publish_histories FROM publish_histories;\" 2>&1)",
+      "Bash(ls:*)"
+    ]
+  }
+}
