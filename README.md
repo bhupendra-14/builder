@@ -1,6 +1,6 @@
 # CMS / Page Builder
 
-A complete admin backend, visual page builder, and asset manager for managing a single-page dynamic website. Built to satisfy the spec in `WebsiteBackend.docx`.
+A complete admin backend, visual page builder, and asset manager for managing a single-page dynamic website.
 
 ## What it does
 
