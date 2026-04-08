@@ -51,14 +51,7 @@ If you're on Windows, **WAMP / Laragon / XAMPP** ships PHP and MySQL together â€
 
 ## Installation (clone â†’ running in 10 minutes)
 
-### 1. Clone the repo
-
-```bash
-git clone <your-repo-url> builder-claude
-cd builder-claude
-```
-
-### 2. Install PHP dependencies
+### 1. Install PHP dependencies
 
 ```bash
 composer install
